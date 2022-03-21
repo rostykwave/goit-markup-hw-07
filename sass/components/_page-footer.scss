@@ -1,5 +1,4 @@
 .page-footer {
-  // padding: 60px 0;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -18,24 +17,22 @@
   text-transform: uppercase;
 }
 // Column-1
+.footer-column-address {
+  width: 231px;
+}
 .address {
-  display: flex;
-  flex-direction: column;
-
   margin-top: 20px;
 }
 .address__list {
   @extend%list;
 }
 .address__item {
-  margin-bottom: 9px;
-
-  &:first-child {
+  &:not(:first-child) {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 .address__link {
