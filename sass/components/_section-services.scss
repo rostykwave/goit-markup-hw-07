@@ -1,0 +1,50 @@
+/* Чем мы занимаемся */
+.services {
+  @extend%list;
+  display: flex;
+}
+
+// .services__item + .services__item {
+//   margin-left: 30px;
+// }
+
+.services__item {
+  position: relative;
+  text-align: center;
+
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+
+    display: inline-block;
+    min-height: 70px;
+    width: 100%;
+    padding: 27px 0;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.services__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  padding: 27px 0;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+}

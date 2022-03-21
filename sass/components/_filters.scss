@@ -1,0 +1,13 @@
+.filters {
+  @extend%list;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+.filters__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-left: 0;
+  }
+}
