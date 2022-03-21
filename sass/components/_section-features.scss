@@ -7,20 +7,12 @@
 .features {
   @extend %list;
   @include grid(30px);
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: calc(-1 * #{$features-card-set-gap})
-  // margin-top: calc(-1 * #{$features-card-set-gap});;
 }
 
 .features__item {
   @include grid__item(30px, 4);
 }
-// .features__item {
-//   flex-basis: calc(100% / #{$Features-columns-number} - #{$features-card-set-gap});
-//   margin-left: #{$features-card-set-gap};
-//   margin-top: #{$features-card-set-gap};
-// }
+
 .features__icon-bgc {
   display: flex;
   justify-content: center;

@@ -4,17 +4,12 @@
   display: flex;
 }
 
-// .services__item + .services__item {
-//   margin-left: 30px;
-// }
-
 .services__item {
   position: relative;
   text-align: center;
 
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 
   &::before {
